@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "global.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/lib/utils/appwriteAuth/appwrite.ts",
+    "src/lib/mongodb/connection/db.js",
+    "AuthOptions.js",
+    "src/middleware.ts",
+    "src/lib/mongodb/models/page.model.ts",
+    "src/lib/mongodb/models/user.model.ts",
+    "src/components/global/patterns/PaymentsPagePatterns.tsx",
+    "src/context/PageFieldsProvider.jsx",
+    "src/context/PreviewReloadProvider.jsx",
+    "src/lib/utils/razorpay/razorpay.js",
+    "src/context/DateProvider.jsx",
+    "src/app/api/user/signin/forgot-password/verify-token/route.js",
+    "src/app/api/page/public-page-data/route.ts",
+    "src/app/api/page/public-page-data/route.ts",
+    "src/components/upload/FileUploder.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
